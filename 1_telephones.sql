@@ -31,6 +31,19 @@ INSERT INTO telephones(name,manufacturer,price,units_sold)
 VALUES('Iphone 12','Apple',1200,1223);
 
 
+-- Insérer plusieurs lignes dans une même requête
+INSERT INTO telephones(name,manufacturer,price,units_sold)
+VALUES
+    ('Iphone 13 Pro Max','Apple',1500,2212),
+    ('Lumia 11','Nokia',500,473),
+    ('Honor 20','Huawei',250,3662),
+    ('Mate 11','Huawei',300,4636),
+    ('Galaxy Note 20','Samsung',670,4632),
+    ('Galaxy S 8','Samsung',780,6616),
+    ('Redmit note 5','Xiaomi',560,7673),
+    ('310','Nokia',10,89476),
+    ('Iphone 14','Apple',1900,9398);
+
 
 
 
