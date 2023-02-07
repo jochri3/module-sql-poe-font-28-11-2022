@@ -46,6 +46,36 @@ VALUES
 
 
 
+-- Filtrer avec Where
+-- && => AND
+-- || => OR
+-- === => =
+SELECT * FROM telephones WHERE price>=250 AND price<=600;
+SELECT * FROM telephones WHERE price BETWEEN 250 AND 600;
+SELECT * FROM telephones WHERE manufacturer='Nokia';
+
+-- SELECT * FROM telephones;
+
+-- Filter par le début d'une chaîne
+SELECT * FROM telephones WHERE manufacturer LIKE 'Hua%';
+
+-- Filter par la fin d'une chaîne
+SELECT * FROM users WHERE email LIKE '%@gmail.com';
+SELECT * FROM telephones WHERE manufacturer LIKE '%wei';
+
+-- Filter par le fabricant et le modèle
+SELECT * FROM telephones WHERE manufacturer='Huawei' AND name LIKE '%11';
+
+-- yahoo.fr yahoo.com yahoo.ca
+SELECT * FROM users WHERE email LIKE '%@yahoo.%'
+
+
+
+
+
+
+
+
 
 
 
