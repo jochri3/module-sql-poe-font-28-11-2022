@@ -12,3 +12,28 @@ CREATE TABLE IF NOT EXISTS telephones(
 );
 
 
+-- SELECT : Lister tous les téléphones en listant toutes colonnes
+SELECT * FROM telephones;
+
+-- Lister tous les téléphones en listant un nombre limité des colonnes
+SELECT id,name,manufacturer FROM telephones;
+
+-- Avoir les noms des champs en Français
+SELECT id,name AS modele,manufacturer AS marque FROM telephones
+
+-- Fusionner les noms des marques et modèles
+SELECT id,CONCAT(manufacturer,name), price FROM telephones;
+SELECT id,CONCAT(manufacturer,' ',name) AS telephone, price FROM telephones;
+
+-- INSERT : Insérer des lignes/enregistrements
+
+INSERT INTO telephones(name,manufacturer,price,units_sold)
+VALUES('Iphone 12','Apple',1200,1223);
+
+
+
+
+
+
+
+
