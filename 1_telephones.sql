@@ -71,6 +71,24 @@ SELECT * FROM users WHERE email LIKE '%@yahoo.%'
 
 
 
+-- Lister tous les téléphones de marque samsung et Apple
+SELECT name,manufacturer FROM telephones 
+    WHERE LOWER(manufacturer)=LOWER('Samsung') OR 
+    LOWER(manufacturer)=LOWER('Apple');
+    
+SELECT name,manufacturer FROM telephones 
+    WHERE LOWER(manufacturer) IN (LOWER('Apple'),LOWER('Samsung'));
+    
+--  Afficher le revenu total pour les téléphones vendues.
+-- Pour chaque téléphone, vous avez le prix et la quantité vendu
+
+
+SELECT id,name,manufacturer, price*units_sold AS ca  FROM telephones;
+    
+
+
+
+
 
 
 
